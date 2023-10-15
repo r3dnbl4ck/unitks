@@ -66,8 +66,47 @@ span.line {
     height: 579px;
     background-color: #5074AF;
     border-radius: 21px;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
+
+.controls .top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.controls .top .title {
+    font-weight: 800;
+    border: 1px solid #111;
+    padding: 10px 20px;
+    border-radius: 32px;
+}
+
+.controls .controls-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.controls .controls-buttons ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.controls .controls-buttons ul li a i {
+    font-size: 34px;
+    color: #fff;
+}
+
 
 @media (max-width: 490px) {
 
